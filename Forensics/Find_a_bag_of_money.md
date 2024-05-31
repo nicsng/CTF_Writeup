@@ -33,7 +33,7 @@ def identify_landmark(latitude, longitude, api_key):
     return {}
 
 # OpenCage Geocoder API key
-api_key = 'e45eb479e72d4597a2310970b5155dd5'
+api_key = ''
 
 # Process each row in the DataFrame
 for index, row in df.iterrows():
