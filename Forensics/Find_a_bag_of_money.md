@@ -1,6 +1,6 @@
 Find a bag of money
 
-Description:
+#Description:
 Find the money sack, which is hidden in a landmark.
 attached is a downloadable file strings.txt containing "bafybeicjfojuswk3uzb54f76qxmwcfkf7tpf3lxg6u36mazkjk5a2gtybq"
 
@@ -13,6 +13,7 @@ Now create a script to find the landmark.
 import pandas as pd
 import requests
 
+```
 # Load the CSV file into a DataFrame
 df = pd.read_csv('test.csv', header=None, names=['Filename', 'Latitude', 'Longitude', 'In Singapore?'])
 
@@ -46,7 +47,7 @@ for index, row in df.iterrows():
     print(f"Processing image: {image}")
     components = identify_landmark(latitude, longitude, api_key)
     print(f'Image: {image}, Components: {components}, Coordinates: ({latitude}, {longitude})')
-
+```
 ![alt text](image-1.png)
 only 1 coordinate stood out among the rest, which is taj mahal.
 
